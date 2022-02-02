@@ -1,0 +1,66 @@
+[
+  {
+    "label": "Министерство по развитию информационных технологий и коммуникаций Республики Узбекистан",
+    "labelKey": "resourcesLinks.mitc",
+    "logo": "MITC",
+    "path": "https://mitc.uz/",
+    "width": 84,
+    "height": 83
+  },
+  {
+    "label": "Президент Республики Узбекистан",
+    "labelKey": "resourcesLinks.president",
+    "logo": "EmblemUzbekistan",
+    "path": "https://president.uz/",
+    "width": 68,
+    "height": 73
+  },
+  {
+    "label": "Единый портал интерактивных государственных услуг",
+    "labelKey": "resourcesLinks.mygov",
+    "logo": "MyGov",
+    "path": "https://my.gov.uz/",
+    "width": 60,
+    "height": 59
+  },
+  {
+    "label": "Правительственный портал Республики Узбекистан",
+    "labelKey": "resourcesLinks.gov",
+    "logo": "EmblemUzbekistan",
+    "path": "https://gov.uz/",
+    "width": 68,
+    "height": 73
+  },
+  {
+    "label": "Центр управления проектами электронного правительства",
+    "labelKey": "resourcesLinks.egov",
+    "logo": "Egov",
+    "path": "https://egov.uz/",
+    "width": 84,
+    "height": 63
+  },
+  {
+    "label": "Национальная база данных законодательства Республики Узбекистан",
+    "labelKey": "resourcesLinks.lex",
+    "logo": "LexUz",
+    "path": "https://lex.uz/",
+    "width": 170,
+    "height": 42
+  },
+  {
+    "label": "Портал открытых данных",
+    "labelKey": "resourcesLinks.data",
+    "logo": "OpenData",
+    "path": "https://data.gov.uz/",
+    "width": 66,
+    "height": 59
+  },
+  {
+    "label": "Виртуальная приёмная Президента Республики Узбекистан",
+    "labelKey": "resourcesLinks.pm",
+    "logo": "EmblemUzbekistan",
+    "path": "https://pm.gov.uz/",
+    "width": 68,
+    "height": 73
+  }
+]

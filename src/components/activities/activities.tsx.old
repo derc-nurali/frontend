@@ -1,0 +1,23 @@
+import { ComponentType } from 'react';
+import { Container } from '@mui/material';
+import { useTranslation } from 'next-i18next';
+import { BaseLayout } from '../layout';
+import { PageTitle } from '../page-title';
+import { ActivitiesList } from './activities-list';
+
+interface ActivitiesProps {
+  data: Record<string, any>;
+}
+
+export const Activities: ComponentType<ActivitiesProps> = ({ data }) => {
+  const { t } = useTranslation();
+
+  return (
+    <BaseLayout>
+      <Container>
+        <PageTitle title={t('activities', 'Деятельность')} />
+        <ActivitiesList data={data.hits} />
+      </Container>
+    </BaseLayout>
+  );
+};
