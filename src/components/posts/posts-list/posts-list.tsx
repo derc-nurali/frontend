@@ -32,10 +32,10 @@ export const PostsList: ComponentType<PostsListProps & BoxProps> = ({
   data = [],
 }) => {
   const classes = useStyles();
-  const dataColumns = data && separateArray(data, 3);
+  const dataСolumns = data && separateArray(data, 3);
   const spacing = 3.75;
 
-  const columns = map(dataColumns, (column: any, j: number) => {
+  const columns = map(dataСolumns, (column: any, j: number) => {
     const items = map(column, (item: any, i: number) => {
       return (
         <Grid item xs={12} md={gridMap(i, j % 2 === 0, variant)} key={`post_item_${i}`}>
@@ -48,6 +48,10 @@ export const PostsList: ComponentType<PostsListProps & BoxProps> = ({
         {items}
       </Grid>
     );
+  });
+
+  const itemsdemo = map(data, (item: any, idx: number) => {
+    return <PostsCard className={classes.item} item={item} key={`post_${idx}`} />;
   });
 
   return (

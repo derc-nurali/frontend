@@ -127,6 +127,7 @@ export const StructureSchema: ComponentType = () => {
   const structure = (items: StructureItemInterface[]) => {
     // if (isEmpty(items)) return null;
     const subitems = map(items, (subitem: StructureItemInterface, idx: number) => {
+      const count = items.length;
       return (
         <Box
           className={clsx(classes.item, { [classes.__parent]: subitem.child?.length })}
@@ -178,6 +179,7 @@ export const StructureSchema: ComponentType = () => {
     <>
       <Box>
         {map(STRUCTURE_SCHEMA, (item: StructureItemInterface, idx: number) => {
+          const count = item.child?.length;
           if (item.child) structure(item.child);
           return (
             <Box

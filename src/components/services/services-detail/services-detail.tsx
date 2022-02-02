@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react';
-import { BaseLayout } from '../../layout';
+import { BaseLayout } from '../../layout/base-layout';
 import { Section } from '../../section';
 import { Header } from '../../header';
 import { SubHeader } from '../../sub-header';

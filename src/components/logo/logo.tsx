@@ -21,6 +21,7 @@ export const Logo: ComponentType<LogoProps & BoxProps> = ({
   ...props
 }) => {
   const classes = useStyles();
+  const logoImg = () => {};
   const { i18n } = useTranslation();
 
   return (

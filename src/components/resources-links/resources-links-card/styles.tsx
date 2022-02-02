@@ -5,6 +5,7 @@ import { themeBreakpoints } from '../../../common/theme/breakpoints';
 const options = {
   name: 'resources-links-card',
 };
+const transition = 'all .2s ease-in-out';
 
 const useStyles = makeStyles(
   (theme: Theme) => ({
@@ -13,6 +14,14 @@ const useStyles = makeStyles(
       alignItems: 'center',
       color: 'inherit',
       textDecoration: 'none',
+      '&:hover': {
+        '& $img > .default': {
+          opacity: 0,
+        },
+        '& $img > .hover': {
+          opacity: 1,
+        },
+      },
     },
     title: {
       paddingLeft: theme.spacing(2),
@@ -36,6 +45,14 @@ const useStyles = makeStyles(
       color: 'currentcolor',
       maxWidth: '100%',
       height: 'auto',
+      '& > .default': {
+        opacity: 1,
+        transition: transition,
+      },
+      '& > .hover': {
+        opacity: 0,
+        transition: transition,
+      },
     },
   }),
   options

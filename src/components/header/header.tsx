@@ -24,7 +24,7 @@ export const Header: ComponentType<HeaderProps & BoxProps> = ({ className }) => 
   const { t } = useTranslation();
   const r = useResponsive();
   const { handleTheme, theme } = useThemeChange();
-  const { toggleLayoutDrawer } = useLayout();
+  const { layoutDrawer, toggleLayoutDrawer } = useLayout();
   const rowSpacing = r({ xs: 1.75, md: 6.25 });
 
   return (

@@ -16,7 +16,10 @@ interface LangSwitcherProps {
   variant?: 'default';
 }
 
-export const LangSwitcher: ComponentType<LangSwitcherProps> = () => {
+export const LangSwitcher: ComponentType<LangSwitcherProps> = ({
+  className,
+  variant = 'default',
+}) => {
   const Router = useRouter();
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);

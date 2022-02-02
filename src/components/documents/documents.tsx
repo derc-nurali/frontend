@@ -4,7 +4,7 @@ import { ROUTES } from '../../constants/routes.constants';
 import { CrumbProps } from '../breadcrumbs';
 import { FilterTabsItemProps } from '../filter-tabs';
 import { Header } from '../header';
-import { BaseLayout } from '../layout';
+import { BaseLayout } from '../layout/base-layout';
 import { Section } from '../section';
 import { SubHeader } from '../sub-header';
 import { DocumentsList } from './documents-list';
@@ -14,10 +14,16 @@ interface DocumentsProps {
   total?: number;
 }
 
-export const Documents: ComponentType<DocumentsProps> = ({ data }) => {
+export const Documents: ComponentType<DocumentsProps> = ({ data, total }) => {
   const { t } = useTranslation();
 
   const title = t('documents', 'Документы');
+  const crumbs: CrumbProps[] = [
+    {
+      label: title,
+    },
+  ];
+
   const links: FilterTabsItemProps[] = [
     {
       label: t('documents.operating', 'Действующие'),

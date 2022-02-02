@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
 import { useTranslation } from 'next-i18next';
-import { BaseLayout } from '../layout';
+import { BaseLayout } from '../layout/base-layout';
 import { Section } from '../section';
 import { Header } from '../header';
 import { SubHeader } from '../sub-header';

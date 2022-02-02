@@ -9,7 +9,7 @@ import { CATEGORY_NEWS } from '../../../constants/posts-categories.constants';
 import { usePosts, useResponsive } from '../../../hooks';
 import { DataGrid } from '../../data-grid';
 import { Header } from '../../header';
-import { BaseLayout } from '../../layout';
+import { BaseLayout } from '../../layout/base-layout';
 import { PageTitle } from '../../page-title';
 import { Section } from '../../section';
 import { SubHeader } from '../../sub-header';

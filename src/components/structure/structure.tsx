@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { ComponentType } from 'react';
 import { StructureSchema } from '.';
 import { Header } from '../header';
-import { BaseLayout } from '../layout';
+import { BaseLayout } from '../layout/base-layout';
 import { Section } from '../section';
 import { SubHeader } from '../sub-header';
 
